@@ -10,7 +10,7 @@ public class Huevo {
 
     @Override
     public String toString() {
-        return "Huevo{" + "tamanyo= '" + tamanyo + '}';
+        return "Huevo{ " + "tamanyo= " + tamanyo + '}';
     }
 
     public class Clara {
@@ -23,7 +23,7 @@ public class Huevo {
 
         @Override
         public String toString() {
-            return "Clara{ " + "color= '" + color + '}';
+            return "Clara{ " + "color= " + color + '}';
         }
     }
 
@@ -37,9 +37,8 @@ public class Huevo {
 
         @Override
         public String toString() {
-            return "Yema{" +
-                    "color= '" + color + '\'' +
-                    '}';
+            return "Yema{ " +
+                    "color= " + color + '}';
         }
     }
 
@@ -47,5 +46,9 @@ public class Huevo {
         Huevo huevo = new Huevo("XL");
         Huevo.Clara clara = huevo.new Clara("azul");
         Huevo.Yema yema = huevo.new Yema("naranja");
+
+        System.out.println(huevo.toString());
+        System.out.println(clara.toString());
+        System.out.println(yema.toString());
     }
 }
