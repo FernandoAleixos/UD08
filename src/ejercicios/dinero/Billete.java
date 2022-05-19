@@ -13,6 +13,6 @@ public class Billete extends Dinero{
 
     @Override
     public String toString() {
-        return "BILLETE" + super.toString() + "altura = " + altura + "anchura = " + anchura;
+        return "BILLETE:\n" + super.toString() + "\naltura = " + altura + "\nanchura = " + anchura;
     }
 }
